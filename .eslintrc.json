@@ -1,0 +1,16 @@
+{
+    "extends": ["airbnb-base"],
+    "rules": {
+      "linebreak-style": ["error", "unix"],
+      "no-underscore-dangle": ["error", { "allow": ["_id", "_this", "_routeWhitelists"] }],
+      "max-len": ["error", { "code": 120 }],
+      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+      "import/no-cycle": 0
+    },
+    "settings": {
+      "import/ignore": "app/models/index.js"
+    },
+    "plugins": [
+        "import"
+    ]
+}
